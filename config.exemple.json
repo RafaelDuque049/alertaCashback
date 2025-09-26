@@ -1,0 +1,9 @@
+{
+    "defaultMessage": "Olá {nome}, como você está? seu CashBack de R$ {bonus}, que foi gerado na data de {dataBonus}, irá expirar em {vencimentoBonus}.",
+    "minimumValue": 7,
+    "companyName": "example company LTDA",
+
+    "maxLimitPages": 5,
+    "timeTyping": 2000,
+    "respondInGroups": false
+}

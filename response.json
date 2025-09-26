@@ -1,0 +1,12 @@
+{
+    "requestUploadPdf": "Recebemos com sucesso sua solicitação, logo você receberá atualizações.",
+    "errorDownloadPdf": "Ocorreu um erro inesperado em processar seu arquivo PDF. Tente novamente",
+    "pageLimitReached": "O número de páginas do arquivo ultrapassou o limite suportado.",
+    "unexpectedError": "Ocorreu um erro inesperado no processo de disparo.\n\n Por favor, tente novamente e alerte o TI responsável.",
+
+    "inAccordance": "De acordo",
+    "minimumValue": "Valor mínimo",
+    "previouslySent": "Enviado anteriormente",
+    "inconsistentPhoneNumber": "Número inexistente",
+    "sendingFailure":  "Envio impossibilitado"
+}
