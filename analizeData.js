@@ -28,7 +28,7 @@ exports.analizeData = async (sessionClient, messageQuoted) => {
 
     pdfParse(dataBuffer)
         .then(dataCashback => {
-            const dataTBFG = [...dataCashback.text.matchAll(/(\d{2}\/\d{2}\/\d{4})([A-Za-zÀ-ÿ\s]+)\((\d{2})\)\s?(\d{4,5}-\d{4})R\$ ([\d\.]+,\d{2})R\$ ([\d\.]+,\d{2})(\d{2}\/\d{2}\/\d{4})/g)];
+            const dataTBFG = [...dataCashback.text.matchAll(/(\d{2}\/\d{2}\/\d{4})\s*([A-Za-zÀ-ÿ]+)(?:\s+[A-Za-zÀ-ÿ]+)?(?:\s?\.\.\.)?\s*\((\d{2})\)\s?(\d{4,5}-\d{4})R\$ ([\d\.]+,\d{2})R\$ ([\d\.]+,\d{2})(\d{2}\/\d{2}\/\d{4})/g)];
                     
             for (let line of dataTBFG){
                 dataClients.push({

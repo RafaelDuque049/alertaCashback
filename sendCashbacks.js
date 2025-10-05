@@ -4,7 +4,7 @@
 const fs = require('fs');
 
 // Modules
-const { adaptDinamicMessage, convertRealToNumber, colunmAdapter } = require('./tools');
+const { adaptDinamicMessage, convertRealToNumber, colunmAdapter, getFormattedDate } = require('./tools');
 
 // Files
 const configs = JSON.parse(fs.readFileSync('./configs.json', 'utf-8'));
@@ -23,10 +23,16 @@ exports.sendCashbacks = async (sessionClient, clientList, registeredBonuses) => 
                     : process.env.DEVELOPERS_NUMBERS
 
         if(clientList[clientIndex].processSendBonus){
-            await sessionClient.startTyping(telephone, configs.timeTyping);
-            
             await sessionClient
-                .sendText(telephone, adaptDinamicMessage(clientList[clientIndex], configs.defaultMessage))
+                .sendText(
+                    telephone, 
+                    adaptDinamicMessage(clientList[clientIndex], configs.defaultMessage),
+                    { 
+                        createChat: true,
+                        delay: configs.timeTyping,
+                        linkPreview: configs.linkPreview,
+                    }
+                )
                 .then(result => {})
                 .catch(err => {
                     clientList[clientIndex].processSendBonus = false; 
@@ -36,8 +42,6 @@ exports.sendCashbacks = async (sessionClient, clientList, registeredBonuses) => 
         }
 
         clientList[clientIndex]["acessTimestamp"] = Math.round(new Date().getTime() / 1000);
-
-        console.log(clientList[clientIndex])
     }
 
     fs.writeFileSync('bonus/registeredBonuses.json', JSON.stringify(Object.assign(registeredBonuses, clientList)))
@@ -81,7 +85,8 @@ async function createAuditReport(sessionClient, shippingRecord){
     }
 
     let defaultReport = 
-        `Total Cashbacks: ${alertsSent + alertsNotSent}\n`
+        `Data do Relatório: ${getFormattedDate()}\n\n`
+        +`Total Cashbacks: ${alertsSent + alertsNotSent}\n`
         +`Total de alertas enviados: ${alertsSent} (${(alertsSent * 100) / (alertsSent + alertsNotSent)}%)\n`
         +`Total alertas não enviados: ${alertsNotSent} (${(alertsNotSent * 100) / (alertsSent + alertsNotSent)}%)\n`
         +`Valor total de Cashbacks: R$ ${String(totalBonus.toFixed(2)).replace('.', ',')}\n`
@@ -98,3 +103,4 @@ async function createAuditReport(sessionClient, shippingRecord){
         .then(result => console.log(result))
         .catch(err => console.log(err))
 }   
+
