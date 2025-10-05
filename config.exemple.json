@@ -5,5 +5,9 @@
 
     "maxLimitPages": 5,
     "timeTyping": 2000,
-    "respondInGroups": false
+    "respondInGroups": false,
+    "linkPreview": false,
+    
+    "privateTokenFolder": "./privateToken",
+    "privateTokenFolderTester": "./privateTokenTester"
 }
