@@ -3,22 +3,22 @@
 <h2>O que é o Alerta CashBack?</h2>
 <p>
   O Alerta Cashback, é um projeto feito em parceria com uma empresa de pequeno porte (Que optou por não ser identificada),
-  que consegue disparar em massa, avisos de Cashbacks pendentes aos seus clientes, no intuito de aviso-lós do seus descontos e benefícios pendentes
+  que consegue disparar em massa, avisos de Cashbacks pendentes aos seus clientes, no intuito de aviso-lós de seus descontos e benefícios pendentes.
 </p>
 <p>
-  Projeto Alerta Cashback, veio do principal objetivo de economizar tempo, quebrar processos repetitivos e gerar desempenho no que
-  diz questão de propagar avisos de beneficios. Através desses sistema, é possível com dois passos, finalizar um processo que (como informado pela compania)
-  poderia levar de <strong>1 a 3 horas contínuas</strong>, para finalizar a atividade. Assim, abrindo a possibilidade de seus colaboradores direcionar atenção a questões 
-  essencias da empresa, e aumentar o valume de vendas disparando ofertas e promoções que estão pendentes para resgate.
+  O projeto Alerta Cashback, veio do principal objetivo de economizar tempo, quebrar processos repetitivos e gerar desempenho no que
+  diz respeito a propagar avisos de beneficios. Através desses sistema, é possível com dois passos finalizar um processo que (como informado pela compania)
+  poderia levar cerca de <strong>1 a 3 horas contínuas</strong>, para finalizar a atividade. Assim, abrindo a possibilidade de seus colaboradores direcionar a atenção em questões 
+  essencias da empresa, e aumentar o volume de vendas disparando ofertas e promoções que estão pendentes para resgate.
 </p>
 
 <h2>Quais os Objetivos do Sistema</h2>
 <p>
   <ul>
-    <li>Disparar mensagens alertando dos CashBacks pendentes.</li>
-    <li>Gerar relatório informativo sobre os cliente</li>
-    <li>Enviar mensagens alertando sobre promoções pendentes</li>
-    <li>Analisar e gerar Dashboards informando média de desempenho de geração de bônus</li>
+    <li>Disparar mensagens informando seus CashBacks pendentes.</li>
+    <li>Gerar relatórios informativo sobre os clientes.</li>
+    <li>Enviar mensagens alertando sobre promoções pendentes.</li>
+    <li>Analisar e gerar Dashboards informando média de desempenho de geração de bônus.</li>
   </ul>
 </p>
 
@@ -54,7 +54,8 @@
 <h2><strong>🔐 LICENÇA</strong></h2>
 <p>
   Este projeto está aberto para utilização (Estudo, auxilío de projeto pessoal/portfólio, base de projeto e etc) de qualquer pessoa física ou microempresa (MEI & ME),
-  se limitando a apenas estes aqui citados. Não abrindo margem para uso comercial além daqueles aqui definidos, e solicitado antecipadamente a autorização do proprietário do projeto.
+  se limitando a apenas estes aqui citados. Não abrindo margem para uso comercial além daqueles aqui definidos, e solicitado antecipadamente a autorização do proprietário do projeto para tal   
+  utilização do produto.
 </p>
 
 <h2>Autor e Contato:</h2>
