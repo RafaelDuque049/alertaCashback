@@ -6,5 +6,6 @@ readPdf.js
 *estructures*
 
 *privateToken*
-bonus/*.json
-reports/*.txt
+bonus/*
+reports/*
+node_modules
