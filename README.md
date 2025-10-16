@@ -31,6 +31,16 @@
     <li>🔄️ Disparo de mensagem padrão ou dinâmica, contendo assuntos terceiros.</li>
   </ul>
 </p>
+<p>
+  <h2>Fluxograma do Processo Principal:</h2>
+  <p>
+    O sistema, segue algumas etapas após receber o arquivo anexado de clientes. <br><br>
+    Esse processo passa por: Extração de dados, filtragem, organização de informações, alocação e outras etapas para concluir o processo. 
+    Na imagem abaixo, é possível analisar de forma simplificada com um diagrama de fluxo, como segue o processo dessa etapa principal:
+  </p>
+  <img style="margin: auto;" src="https://github.com/user-attachments/assets/0c05f9f7-07b1-4489-ac3e-de777afd2db9"/>
+
+</p>
 
 <h2>Tecnologias Utilizadas</h2>
 <p>
