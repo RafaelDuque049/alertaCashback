@@ -38,7 +38,9 @@
     Esse processo passa por: Extração de dados, filtragem, organização de informações, alocação e outras etapas para concluir o processo. 
     Na imagem abaixo, é possível analisar de forma simplificada com um diagrama de fluxo, como segue o processo dessa etapa principal:
   </p>
-  <img style="margin: auto;" src="https://github.com/user-attachments/assets/0c05f9f7-07b1-4489-ac3e-de777afd2db9"/>
+  <p align="center">
+    <img style="margin: auto;" src="https://github.com/user-attachments/assets/5ed017f0-f3bc-42b6-b616-4328c201d31c"/>
+  </p>
 
 </p>
 
